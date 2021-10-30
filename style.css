@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    /* to perfectly centre any element inside the body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    height: 85vh;
+    width: 80vw;
+    background-color: #1a0d52;
+    border-radius: 10px;
+}
+
+.ball {
+    /* to make a circle in css (since css does not contain circle it only contains boxes) */
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #fe5196;
+
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+}
+
+.paddle {
+    height: 120px;
+    width: 15px;
+    background-color: #fe5196;
+    position: fixed;
+    border-radius: 2px;
+}
+
+.left {
+    top: 40vh;
+    left: 12vw;
+}
+
+.right {
+    top: 40vh;
+    right: 12vw;
+}
+
+.fa-circle {
+    color: #ffbe76;
+    font-size: 32px;
+}
+
+.scorecard {
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1 1 1;
+}
+
+.seperator {
+    width: 4px;
+    height: 70%;
+    background-color: black;
+}
